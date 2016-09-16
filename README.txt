@@ -1,18 +1,3 @@
-This module provides learning of Stochastic Context-Free Grammar (SCFG) structures and parameters.
-
-**Install SARTParser library**
-It depends on Miguel Sarabia del Castillo's SARTParser package. You can download it from:
-http://miguelsdc.bitbucket.org/SARTParser/
-
-**Install pip**
-sudo apt-get install python-pip
-
-**Install dependency**
-pip install pathos
-Depending on your Python installation, you might need root access, i.e.:
-sudo pip install pathos
-
-
 # **Notations used in the code**
 
 NJP: Normalized Joint Probability ( JP(S)^(1/len(S)) )
