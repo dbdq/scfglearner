@@ -1,4 +1,4 @@
-# **Notations used in the code**
+# Notations used in the code
 
 NJP: Normalized Joint Probability ( JP(S)^(1/len(S)) )
 V: Rule score (V= sigma(NJP(S)) * len(S))
