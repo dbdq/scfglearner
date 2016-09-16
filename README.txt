@@ -4,7 +4,13 @@ This module provides learning of Stochastic Context-Free Grammar (SCFG) structur
 It depends on Miguel Sarabia del Castillo's SARTParser package. You can download it from:
 http://miguelsdc.bitbucket.org/SARTParser/
 
-With standard Python setup, generally you won't need to install any extra Python package.
+**Install pip**
+sudo apt-get install python-pip
+
+**Install dependency**
+pip install pathos
+Depending on your Python installation, you might need root access, i.e.:
+sudo pip install pathos
 
 
 # **Notations used in the code**
