@@ -1,7 +1,7 @@
 This module provides the learning of Stochastic Context-Free Grammar (SCFG) structures and parameters.
 It was developed to learn hierarchical representations from various human tasks.
 
-**Install SARTParser library**
+### Install SARTParser library
 
 It depends on Miguel Sarabia del Castillo's SARTParser package. You can download it from:
 
@@ -10,14 +10,14 @@ http://miguelsdc.bitbucket.org/SARTParser/
 Although not tested, it should work on a Windows machine since it's written in Python.
 
 
-**Clone**
+### Clone
 
 ```
 $ hg clone https://bitbucket.org/leekyuh/scfglearner scfglearner
 ```
 
 
-**Install pip**
+### Install pip
 
 
 ```
@@ -25,7 +25,7 @@ $ sudo apt-get install python-pip
 ```
 
 
-**Install Python dependency**
+### Install Python dependency
 
 
 ```
@@ -40,7 +40,7 @@ $ sudo pip install pathos
 ```
 
 
-**Input files (See samples)**
+### Input files (See samples)
 
 You need two files:
 
@@ -57,13 +57,43 @@ Each file name should end with '.seq' extension.
 The column order must match with the terminal order as defined in 1).
 
 
+### Notations used in the code
 
-**Relevant papers**
+- NJP: Normalized Joint Probability ( JP(S)^(1/len(S)) )
+
+- V: Rule score (V= sigma(NJP(S)) * len(S))
+
+- Data structures:
+input= {'symbols':[], 'values':[]}
+ Input stream with uncertainties.
+
+- G = {'NT':[rule1, rule2, ...], ...}
+ Grammar object.
+
+- DLT(global) = OrderedDict{string:{score, count, parent, terms}}
+ Description Length Table.
+
+- GNode = Class{g, dlt, pri, pos, mdl, bestmdl, gid, worse}
+ Grammar node of a search tree, gList.
+ 
+ - bestmdl: Best MDL score observed so far in the current branch
+ 
+ - worse: For beam search (worse += 1 if new_mdl > bestmdl)
+
+- T_STAT = {string: {count, prob}}
+Statistics of terminal symbols.
+
+- T_LIST = {'a':'A', 'b':'B',...}
+ Global terminal list.
+
+- Concepts of Merging & Substituting:
+A. Stolcke, PhD Thesis, UCB, p.93-97
+
+
+### Relevant papers
 
 * Kyuhwa Lee, Dimitri Ognibene, Hyung Jin Chang, Tae-Kyun Kim, Yiannis Demiris, "STARE: Spatio-Temporal Attention RElocation for Multiple Structured Activities Detection", IEEE Transactions on Image Processing (TIP), 2015.
 
 * Kyuhwa Lee, Yanyu Su, Tae-Kyun Kim and Yiannis Demiris, "A Syntactic Approach to Robot Imitation Learning using Probabilistic Activity Grammars", Robotics and Autonomous Systems (RAS), Elsevier, Volume 61, Issue 12, pp.1323-1334, 2013.
 
 * Stolcke A (1995) An Efficient Probabilistic Context-Free Parsing Algorithm that Computes Prefix Probabilities, Computational Linguistics, 21(2), pp:165-201.
-
-
