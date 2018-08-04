@@ -1,7 +1,7 @@
 This module provides the learning of Stochastic Context-Free Grammar (SCFG) structures and parameters.
 It was developed to learn hierarchical representations from various human tasks.
 
-### Install SARTParser library
+### Prerequisites
 
 It depends on Miguel Sarabia del Castillo's SARTParser package. You can download it from:
 
