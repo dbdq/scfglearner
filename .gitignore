@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__
+build
+obj
+results
+.idea
+*.pyc
+*.pyo
+*~
+*.log
+*.swp
+*.bak
+*.asv
