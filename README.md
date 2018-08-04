@@ -1,3 +1,5 @@
+# Stochastic Context Free Grammar Learner
+
 This module provides the learning of Stochastic Context-Free Grammar (SCFG) structures and parameters.
 It was developed to learn hierarchical representations from various human tasks.
 
