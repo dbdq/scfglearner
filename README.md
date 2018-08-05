@@ -15,7 +15,7 @@ Although not tested, it should work on a Windows machine since it's written in P
 ### Clone
 
 ```
-$ hg clone https://bitbucket.org/leekyuh/scfglearner scfglearner
+$ git clone https://github.com/dbdq/scfglearner.git
 ```
 
 
