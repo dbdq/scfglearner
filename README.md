@@ -89,7 +89,7 @@ Statistics of terminal symbols.
  Global terminal list.
 
 - Concepts of Merging & Substituting:
-A. Stolcke, PhD Thesis, UCB, p.93-97
+A. Stolcke, PhD Thesis, UC Berkeley, p.93-97
 
 
 ### Relevant papers
