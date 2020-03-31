@@ -7,7 +7,7 @@ It was developed to learn hierarchical representations from various human tasks.
 
 It depends on Miguel Sarabia del Castillo's SARTParser package. You can download it from:
 
-http://miguelsdc.bitbucket.org/SARTParser/
+https://bitbucket.org/miguelsdc/sartparser/src/default/
 
 Although not tested, it should work on a Windows machine since it's written in Python.
 
